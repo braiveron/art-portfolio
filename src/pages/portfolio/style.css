@@ -205,6 +205,10 @@
 
 /* RESPONSIVE SOLO PARA TABLETS Y MÓVILES */
 @media screen and (max-width: 1024px) {
+  .portfolio-section {
+    padding: 1rem 1.5rem; /* 🔧 reducido para dispositivos más chicos */
+  }
+
   .portfolio-grid {
     grid-template-columns: 1fr !important;
   }
