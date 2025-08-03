@@ -71,40 +71,21 @@ export const ContactUs = () => {
 
   return (
     <HelmetProvider>
-      <div style={{ display: "flex", height: "100vh", flexDirection: "row" }}>
+      <div className="contact-wrapper">
         {/* Columna izquierda: Imagen */}
         <div
+          className="contact-left"
           style={{
-            width: "30%",
-            height: "90%",
             backgroundImage: `url(${introdata.contact_img_url})`,
-            backgroundSize: "cover",
-            backgroundPosition: "top center",
-            backgroundRepeat: "no-repeat",
           }}
         ></div>
 
         {/* Columna derecha: Contenido */}
-        <div
-          style={{
-            width: "70%",
-            height: "80%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            boxSizing: "border-box",
-          }}
-        >
-          <div
-            style={{
-              width: "100%",
-              maxWidth: "600px",
-            }}
-          >
+        <div className="contact-right">
+          <div style={{ width: "100%", maxWidth: "600px" }}>
             <Helmet>
               <meta charSet="utf-8" />
               <title>
-                {" "}
                 {t("meta.contact")} | {meta.title}
               </title>
               <meta name="description" content={meta.description} />

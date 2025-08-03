@@ -1,58 +1,94 @@
+.contact-wrapper {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+}
+
+.contact-left {
+  width: 30%;
+  height: 90%;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.contact-right {
+  width: 70%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
 .contact__form .form-control {
-    padding: 1.375rem .75rem;
-    line-height: 1.5;
-    color: var(--text-color);
-    background-color: var(--bg-color);
-    border-radius: 0 !important;
-    border: 1px solid var(--secondary-color);
+  padding: 1.375rem 0.75rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  border-radius: 0 !important;
+  border: 1px solid var(--secondary-color);
 }
 
 .contact__form input.form-control {
-    margin-bottom: 2em;
-    height: calc(2.5em + .75rem + 2px);
+  margin-bottom: 2em;
+  height: calc(2.5em + 0.75rem + 2px);
 }
 
 button.btn.ac_btn:hover {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .loading-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 10px;
-    z-index: 999999999;
-    background: var(--text-color);
-    transform: translateX(100%);
-    animation: shift-rightwards 1s ease-in-out infinite;
-    animation-delay: .3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  z-index: 999999999;
+  background: var(--text-color);
+  transform: translateX(100%);
+  animation: shift-rightwards 1s ease-in-out infinite;
+  animation-delay: 0.3s;
 }
 
+@keyframes shift-rightwards {
+  0% {
+    transform: translateX(-100%);
+  }
+  40% {
+    transform: translateX(0%);
+  }
+  60% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Responsive para pantallas menores a 768px */
 @media (max-width: 768px) {
   .contact-wrapper {
     flex-direction: column !important;
+    height: auto; /* Que no sea full vh para móviles */
   }
 
   .contact-left,
   .contact-right {
     width: 100% !important;
+    height: 300px !important; /* Altura fija para que se vea la imagen */
+  }
+
+  .contact-left {
+    background-position: center center;
+  }
+
+  .contact-right {
     height: auto !important;
+    padding: 0 1.5rem; /* margen horizontal mayor */
+    margin-top: 1rem;
+    box-sizing: border-box;
   }
 }
 
-
-@keyframes shift-rightwards {
-    0% {
-        transform: translateX(-100%);
-    }
-    40% {
-        transform: translateX(0%);
-    }
-    60% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(100%);
-    }
-}

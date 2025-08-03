@@ -203,3 +203,70 @@
   background-color: #019875;
 }
 
+/* RESPONSIVE SOLO PARA TABLETS Y MÓVILES */
+@media screen and (max-width: 1024px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .portfolio-item {
+    grid-column: 1 / -1 !important;
+  }
+
+  .group-container.horizontal,
+  .group-container.horizontal.two-columns {
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .group-container.horizontal.two-columns .group-item {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-top: 56.25% !important;
+    position: relative;
+  }
+
+  .group-container.horizontal.two-columns .group-item video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-slide {
+    width: 100% !important;
+  }
+
+  .portfolio-video {
+    aspect-ratio: 3/4 !important;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .section-description {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .portfolio-callout {
+    padding: 1.5rem;
+  }
+
+  .portfolio-callout h3 {
+    font-size: 1.4rem;
+  }
+
+  .portfolio-callout p {
+    font-size: 1rem;
+  }
+
+  .download-button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
