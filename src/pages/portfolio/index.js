@@ -9,6 +9,8 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "./style.css";
 
+// ...imports iguales
+
 export const Portfolio = () => {
   const { t } = useTranslation();
 
@@ -21,7 +23,6 @@ export const Portfolio = () => {
           </title>
         </Helmet>
 
-        {/* Título y descripción principal */}
         <h2 className="section-title">{t("portfolio.title")}</h2>
         <p className="section-description">
           {t("portfolio.description.part1")}
@@ -73,7 +74,7 @@ export const Portfolio = () => {
                         key={i}
                         style={{ width: "25%", flexShrink: 0 }}
                       >
-                        <img src={subitem.src} alt="" />
+                        <img src={subitem.src} alt="" loading="lazy" />
                       </SwiperSlide>
                     ))}
                   </Swiper>
@@ -99,7 +100,7 @@ export const Portfolio = () => {
                             {subitem.slides.map((slide, idx) => (
                               <SwiperSlide key={idx}>
                                 {slide.type === "image" ? (
-                                  <img src={slide.src} alt="" />
+                                  <img src={slide.src} alt="" loading="lazy" />
                                 ) : (
                                   <video
                                     src={slide.src}
@@ -107,6 +108,7 @@ export const Portfolio = () => {
                                     autoPlay
                                     loop
                                     playsInline
+                                    preload="none"
                                     className="portfolio-video"
                                   />
                                 )}
@@ -114,7 +116,7 @@ export const Portfolio = () => {
                             ))}
                           </Swiper>
                         ) : subitem.type === "image" ? (
-                          <img src={subitem.src} alt="" />
+                          <img src={subitem.src} alt="" loading="lazy" />
                         ) : (
                           <video
                             src={subitem.src}
@@ -122,6 +124,7 @@ export const Portfolio = () => {
                             autoPlay
                             loop
                             playsInline
+                            preload="none"
                             className={
                               item.layout === "horizontal two-columns"
                                 ? ""
@@ -145,7 +148,7 @@ export const Portfolio = () => {
                     </a>
                   </div>
                 ) : item.type === "image" ? (
-                  <img src={item.src} alt="" />
+                  <img src={item.src} alt="" loading="lazy" />
                 ) : (
                   <video
                     src={item.src}
@@ -153,6 +156,7 @@ export const Portfolio = () => {
                     autoPlay
                     loop
                     playsInline
+                    preload="none"
                     className="portfolio-video"
                   />
                 )}
