@@ -1,0 +1,205 @@
+.portfolio-section {
+  padding: 1rem 4rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch; /* clave */
+}
+
+.portfolio-item.large {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.portfolio-item img,
+.portfolio-item video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.portfolio-video {
+  width: 100%;
+  aspect-ratio: 4/5;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.carousel-container {
+  max-width: 600px; /* o el ancho de tu columna izquierda */
+  width: 100%;
+}
+
+.portfolio-item .info {
+  padding: 1rem 0.5rem;
+}
+
+.portfolio-item.small {
+  grid-column: span 1;
+}
+
+/* Carrusel en grupo (horizontal) */
+.group-container {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Apilado vertical */
+.group-container.vertical {
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.group-container.vertical .group-item {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.group-container.vertical .group-item img {
+  flex: 1;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.group-container.vertical .group-item video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.group-container.vertical .group-item .info {
+  padding: 0.5rem 0;
+}
+
+.group-item {
+  flex: 1;
+  min-width: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img,
+.swiper-slide video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Carruseles uno al lado del otro */
+.group-container.horizontal {
+  flex-direction: row;
+  width: 100%;
+  gap: 1rem;
+}
+
+.group-container.horizontal .group-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.group-container.horizontal .group-item .info {
+  padding: 0.5rem 0;
+}
+
+/* portfolio-video-two-columns.css */
+
+/* === VIDEO 16:9 horizontal en fila de dos === */
+.group-container.horizontal.two-columns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.group-container.horizontal.two-columns .group-item {
+  position: relative;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-top: 56.25%; /* 16:9 ratio para navegadores sin aspect-ratio */
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: black;
+}
+
+.group-container.horizontal.two-columns .group-item video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cambiar a "contain" si querés evitar recorte */
+  border-radius: 8px;
+}
+
+
+
+.portfolio-callout {
+  padding: 2rem;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.portfolio-callout h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-callout p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #00b894;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #019875;
+}
+

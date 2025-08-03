@@ -1,0 +1,63 @@
+{
+  "title": "I'm Braian Veron",
+  "animated": {
+    "first": "Specialized in aerial acrobatics",
+    "second": "Experienced in duo and solo acts",
+    "third": "With a background in dance and body training"
+  },
+  "description": "Stage performer with international experience. I mainly work in aerial disciplines, with a strong focus on aerial pole and trapedance. I bring technical precision, stage presence, and versatility.",
+
+  "buttons": {
+    "portfolio": "My Portfolio",
+    "contact": "Contact Me"
+  },
+
+  "menu": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "about": "About me",
+    "contact": "Contact"
+  },
+
+  "contact": {
+    "title": "Contact Me",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "SENT! Thank you for your message.",
+    "error": "Failed to send",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message"
+    },
+    "description": "Looking for a passionate and versatile performer for your next event? Don’t hesitate to reach out."
+  },
+
+  "meta": {
+    "contact": "Contact",
+    "home": "Home",
+    "about": "About me",
+    "portfolio": "Portfolio"
+  },
+
+  "about": {
+  "title": "In Motion",
+"description": "I'm Braian, a performing artist from Argentina specializing in aerial acrobatics and dance.\n\nMy work blends strength, body control, and artistic expression to create intense visual experiences.\n\nI've performed on stages across Argentina and Turkey—from circuses and theaters to international shows—always pushing my art to the limit. Each performance is my way of exploring new languages through the body, turning every movement into a living story.\n\nBecause being in motion is not just a physical state—it's the way I live my evolution as an artist.",
+  "skill1": "Aerial acrobat | Solo act | Duo",
+  "skill2": "Stage performer | Model",
+  "skill3": "Artistic versatility | choreographic presence"
+},
+
+"portfolio": {
+  "title": "Project Galery",
+  "description.part1": "A selection of my work as a multidisciplinary performance artist.",
+"description.part2": "Includes dance, aerial acrobatics, modeling, and commercial content.",
+"download.title": "Discover my work",
+"download.description": "Download the complete portfolio to explore my projects, process, and skills.",
+"download.button": "Download Portfolio PDF"
+}
+
+}

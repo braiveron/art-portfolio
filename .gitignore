@@ -1,0 +1,34 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Editor/IDE configs
+.vscode/
+.idea/
+
+# MacOS metadata
+*.DS_Store
+
+# Git metadata (si reiniciaste el repo)
+.git/
+
+# Optional: lockfiles (solo si no los usás)
+# yarn.lock
+# package-lock.json

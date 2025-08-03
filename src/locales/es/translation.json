@@ -1,0 +1,64 @@
+{
+  "title": "Soy Braian Veron",
+  "animated": {
+    "first": "Especializado en acrobacia aérea",
+    "second": "Experiencia en dúos y solos escénicos",
+    "third": "Con base en danza y entrenamiento corporal"
+  },
+  "description": "Artista escénico con trayectoria internacional. Me desempeño principalmente en disciplinas aéreas, con un enfoque fuerte en pole aéreo y trapedance. Trabajo con precisión técnica, presencia escénica y versatilidad.",
+
+    "buttons": {
+    "portfolio": "Mi Portfolio",
+    "contact": "Contactame"
+
+},
+
+"menu": {
+"home": "Inicio",
+"portfolio": "Portfolio",
+"about": "Sobre mí",
+"contact": "Contacto"
+},
+
+"contact": {
+    "title": "Contactame",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram",
+    "send": "Enviar",
+    "sending": "Enviando...",
+    "success": "¡ENVIADO! Gracias por tu mensaje.",
+    "error": "Error al enviar",
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "message": "Mensaje"
+    },
+    "description": "¿Buscas un artista apasionado y versátil para tu próximo evento? No dudes en contactarme."
+  },
+
+    "meta": {
+    "contact": "Contacto",
+    "home": "Inicio",
+    "about": "Sobre mi",
+    "portfolio": "Portfolio"
+  },
+
+  "about": {
+  "title": "En Movimiento",
+  "description": "Soy Braian, artista escénico argentino especializado en acrobacia aérea y danza.\n\nMi trabajo combina fuerza, control corporal y expresión artística para crear experiencias visuales intensas.\n\nHe recorrido escenarios en Argentina y Turquía, desde circos y teatros hasta shows internacionales, siempre llevando mi arte al límite. Cada presentación es mi manera de explorar nuevos lenguajes a través del cuerpo, transformando cada movimiento en una historia viva.\n\nPorque estar en movimiento no es solo una cuestión física, sino también una forma de vivir mi evolución como artista.",
+  "skill1": "Acróbata aéreo | Individual | Dúo",
+  "skill2": "Artista escénico | Modelo",
+  "skill3": "Versatilidad artística | Presencia coreográfica"
+  },
+
+
+  "portfolio": {
+    "title": "Galería de Proyectos",
+    "description.part1": "Una selección de mis trabajos como artista escénico multidisciplinario.",
+    "description.part2": "Incluye performances de danza, acrobacia aérea, modelaje y contenido publicitario.",
+    "download.title": "Descubrí mi trabajo",
+    "download.description": "Descargá el portfolio completo para conocer en profundidad mis proyectos, procesos y habilidades.",
+    "download.button": "Descargar Portfolio PDF"
+  }
+}
