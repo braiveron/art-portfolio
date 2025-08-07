@@ -12,7 +12,7 @@ import "./style.css";
 // ...imports iguales
 
 export const Portfolio = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <HelmetProvider>
@@ -140,7 +140,11 @@ export const Portfolio = () => {
                     <h3>{t("portfolio.download.title")}</h3>
                     <p>{t("portfolio.download.description")}</p>
                     <a
-                      href={item.content.fileUrl}
+                      href={
+                        i18n.language.startsWith("es")
+                          ? item.content.fileUrlEs
+                          : item.content.fileUrlEn
+                      }
                       download
                       className="download-button"
                     >

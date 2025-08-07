@@ -159,7 +159,8 @@ const portfolioData = [
       title: "download.title",
       description: "download.description",
       buttonLabel: "download.buttonLabel",
-      fileUrl: "/portfolio-braian-veron.pdf",
+      fileUrlEn: "/portfolio-braian-veron-ingles.pdf",
+      fileUrlEs: "/portfolio-braian-veron-espanol.pdf",
     },
   },
 ];

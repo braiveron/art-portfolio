@@ -33,6 +33,7 @@
 .contact__form input.form-control {
   margin-bottom: 2em;
   height: calc(2.5em + 0.75rem + 2px);
+  
 }
 
 button.btn.ac_btn:hover {
